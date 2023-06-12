@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+   
+    <script type="module" src="person.js"></script>
+    <script type="module" src="main.js"></script>
+    <title>Post Creator</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Post Creator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      <!-- Navbar End -->
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Main Content Row -->
+        <div class="row">
+            <!-- Left Side Column -->
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="/static/canine.jpg"> 
+                    <div class="card-body">
+                        <h5 id="post_author" class="card-title">Isaac</h5>
+                        <p class="card-text">
+                            Hi! How are you?
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush text-right">
+                        <li class="list-group-item">Web Developer/ Student/ Gamer/ Life enjoyer(?)</li>
+                        <li class="list-group-item">Attended <em>DBSPD</em></li>
+                        <li class="list-group-item">Lives in HK</li>
+                    </ul>
+                    <div class="d-flex card-body justify-content-between">
+                        <a href="#" class="card-link" style="color:red;">Delete Account</a>
+                        <a href="#" class="card-link">Edit Profile</a>
+                    </div>
+                </div>
+
+                <!-- Custom Profile START -->
+                <div id="profileDiv" class="col-sm-4">
+
+                </div>
+                <!-- Custom Profile END -->
+            </div>
+            <!-- Left Side Column End -->
+
+            <!-- Right Side Column -->
+            <div class="col-sm-8 p-3">
+                <!-- Post Prompt Start -->
+                <div class="card p-3">
+                    <div class="form-floating mb-2">
+                        <input id="post_title" type="text" class="form-control" placeholder="Making my first Lasagna">
+                        <label for="post_title">Post Title</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="What do you wanna say?" id="post_content"
+                            style="height: 100px"></textarea>
+                        <label for="post_content">Post description</label>
+                    </div>
+                    <div class="d-flex justify-content-end mt-3">
+                        <button id="post_submit" class="btn btn-primary">Post</button>
+                    </div>
+                </div>
+                <!-- Post Prompt End -->
+
+                <!-- Post Display Section Start -->
+                <div id="post_container">
+
+                </div>
+                <!-- Post Display Section End -->
+
+            </div>
+            <!-- Right Side Column End -->
+
+        </div>
+        <!-- Main Content Row End -->
+    </div>
+    <!-- Main Content End -->
+
+
+
+    
+</body>
+</html>
